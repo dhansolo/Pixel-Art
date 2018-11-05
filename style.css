@@ -1,0 +1,43 @@
+html {
+    background-color: #fdf9f9;
+}
+
+#art {
+    display: table;
+    border-spacing: 1px;
+    background-color: black;
+    border: 5px solid black;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+
+#color-selector, #utilities, #footer, h1 {
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+.row {
+    display: table-row;
+}
+
+.pixel {
+    display: table-cell;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.pen {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+

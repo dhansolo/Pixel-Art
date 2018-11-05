@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Not-So-Fancy Pixel Editor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" async defer></script>
+    </head>
+    <body onload="createGrid(10, 10)">
+        <h1>Not-So-Fancy Pixel Art Editor</h1>
+        <div id="color-selector">
+            <div class="pen" style="background-color: white;" onclick="setPenColor('white')"></div>
+            <div class="pen" style="background-color: black;" onclick="setPenColor('black')"></div>
+            <div class="pen" style="background-color: blue;" onclick="setPenColor('blue')"></div>
+            <div class="pen" style="background-color: red;" onclick="setPenColor('red')"></div>
+            <div class="pen" style="background-color: green;" onclick="setPenColor('green')"></div>
+            <div class="pen" style="background-color: yellow;" onclick="setPenColor('yellow')"></div>
+        </div>
+        <div id="utilities">
+            Grid Size: <input type="number" placeholder="10" min="5" max="30" onchange="createGrid(this.value, this.value)"> | 
+            <button type="button" onclick="reset()">Reset</button>
+        </div>
+        <div id="art"></div>
+    </body>
+    <footer id="footer">
+        Made by David Han with thanks to Code Club
+    </footer>
+</html>
